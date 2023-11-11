@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: #171717;
+}
+
+section nav {
+    width: 100%;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section nav .logo{
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+section nav .logo span {
+    color: #27af5d;
+}
+
+section nav ul {
+    list-style: none;
+
+}
+
+section nav ul li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+section nav ul li:hover {
+    color: #27af5d;
+}
+
+section .main{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .main .text h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+section .main .text p.job {
+    color:  #919191;
+    margin: 10px 0;
+}
+
+section .main .text p.tag {
+    width: 600px;
+    color: #cccccc;
+    line-height: 24px;
+    text-align: justify;
+    position: relative;
+    margin-top: 30px;
+}
+
+section .main .text .main_btn {
+    position: relative;
+    top: 60px;
+}
+
+section .main .text .main_btn .cv_btn {
+    background: #27af5d;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+section .main .text .main_btn .learn_btn {
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    background: none;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+section .main .text .main_btn .learn_btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+section .main .image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* About */
+
+.about {
+    width: 100%;
+    height: auto;
+    background: #171717;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about h1 {
+    font-size: 45px;
+    color: #fff;
+}
+
+
+.about p.about_tag {
+    color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.about .about_card {
+    width: 80%;
+    margin: 80px auto 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.about .about_card .about_box {
+    width: 300px;
+}
+
+
+
+.about .about_card .about_box .main_circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #222222;
+    position: relative;
+    margin: 0 auto;
+}
+
+.about .about_card .about_box .main_circle .small_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #27af5d;
+    transition: .3s;
+}
+
+.about .about_card .about_box .main_circle:hover .small_circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+} 
+
+.about .about_card .about_box .about_text {
+    margin-top: 20px;
+}
+
+.about .about_card .about_box .about_text h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.about .about_card .about_box .about_text .circle_tag {
+    color: #919191;
+    
+}
+
+
+/* Skills */
+
+.skills {
+    width: 100%;
+    height: auto;
+    background: #171717;
+    padding: 25px 0;
+}
+
+.skills h1{
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.skills .skills_bord{
+    width: 70%;
+    height: 160px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.skills .skills_bord .skills_card h2 {
+    font-size: 55px;
+    color: #919191;
+}
+
+.skills .skills_bord .skills_card p {
+    color: #27af5d;
+    text-align: center;
+}
+
+
+/* submit */
+
+.submint_form{
+    width: 100%;
+    height: 100vh;
+    background: #171717;
+}
+
+.submint_form h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.submint_form form{
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.submint_form form input {
+    margin: 20px;
+    padding: 10px 6px;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #919191;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #919191;
+}
+
+.submint_form textarea{
+    width: 62%;
+    height: 90px;
+    padding: 8px 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    background: none;
+    border: 1px solid #919191;
+    color: #919191;
+    outline: none;
+}
+
+
+.submint_form .form_btn {
+    background: #27af5d;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    top: 60px;
+    right: 230px;
+}
+
+
+p.end{
+    padding: 30px 0 20px 0;
+    text-align: center;
+    width: 100%;
+    background: #171717;
+    color: #919191;
+}
+
+p.end span{
+    color: #27af5d;
+}
+
+p.end span i {
+    margin: 0 8px;
+}
